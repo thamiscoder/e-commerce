@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", Sans-serif;
+    overflow: hidden;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #3f3e4c;
+    padding: 10px 15px;
+}
+
+header h1 {
+    color: #28af98;
+}
+
+header .menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 15px;
+}
+
+.home {
+    text-align: center;
+    margin-top: 15px;
+    color: #28af98;
+}
+
+.slider { 
+    margin: 0 auto;
+    width: 750px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    width: 800px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid #28af98;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+    
+}
+
+.manual-btn:not(:last-child) {
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: #28af98;
+}
+
+#radio1:checked ~ .slides {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .slides {
+    margin-left: -27%;
+}
+
+#radio3:checked ~ .slides {
+    margin-left: -69%;
+} 
+
+.navigation-auto div {
+    border: 2px solid #28af98;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navigation-auto {
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+    background-color: #28af98;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+    background-color: #28af98;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+    background-color: #28af98;
+}
+
+
+
+
+
