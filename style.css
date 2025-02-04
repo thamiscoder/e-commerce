@@ -8,32 +8,72 @@
 }
 
 body {
+    background-color: rgba(255, 255, 255, 0.853);
     font-family: "Poppins", Sans-serif;
-    overflow: hidden;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 
 header {
+    flex-direction: column;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #3f3e4c;
-    padding: 10px 15px;
+    background-color: #121212;
+    padding: 20px 15px;
 }
 
 header h1 {
-    color: #28af98;
+    transition: transform 0.3s ease-in-out;
 }
 
-header .menu a{
-    color: #fff;
+header h1:hover {
+    transform: scale(1.1);
+}
+
+header h1 a{
+    color: #28af98;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+nav {
+    background-color: #28af98;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 15px;
+    padding-left: 20px;
+}
+
+nav a{
+    font-weight: 700;
+    color: #000;
     text-decoration: none;
     padding: 15px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.bx-cart-add {
+    font-size: 30px;
+    color: #28af98;
+    transition: transform 0.3s ease;
+}
+
+.bx-cart-add:hover { 
+    transform: scale(1.2);
+    color: white;
 }
 
 .home {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 30px;
     color: #28af98;
 }
 
@@ -48,6 +88,7 @@ header .menu a{
     width: 400%;
     height: 400px;
     display: flex;
+
 }
 
 .slides input {
@@ -57,9 +98,11 @@ header .menu a{
 .slide {
     width: 25%;
     position: relative;
+    transition: 2s;
 }
 
 .slide img {
+    margin: auto;
     width: 800px;
 }
 
@@ -100,6 +143,10 @@ header .menu a{
     margin-left: -69%;
 } 
 
+#radio4:checked ~ .slides {
+    margin-left: -153%;
+}
+
 .navigation-auto div {
     border: 2px solid #28af98;
     padding: 5px;
@@ -131,6 +178,40 @@ header .menu a{
 #radio3:checked ~ .navigation-auto .auto-btn3 {
     background-color: #28af98;
 }
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+    background-color: #28af98;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #F5F5F5;
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 8px;
+}
+
+.produtos div img {
+    max-width: 100%;
+    height: auto;
+    margin: 30px; 
+}
+
+.produto img {
+    background-color: rgba(255, 255, 255, 0.71);
+    width: 200px;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.produto img:hover {
+    transform: scale(1.1);
+}
+
 
 
 

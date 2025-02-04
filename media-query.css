@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+@media (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+  
+    header, .produtos {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .produtos img {
+      margin: 5px;
+    }
+  }
+  
+  /* Estilos para telas menores que 480px (smartphones) */
+  @media (max-width: 480px) {
+    .container {
+      padding: 5px;
+    }
+  
+    header, .produtos {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .produtos img {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
