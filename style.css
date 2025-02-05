@@ -20,7 +20,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #121212;
+    background-color: #121212ee;
     padding: 20px 15px;
 }
 
@@ -73,7 +73,6 @@ nav a{
 
 .home {
     text-align: center;
-    margin-top: 30px;
     color: #28af98;
 }
 
