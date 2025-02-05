@@ -1,6 +1,11 @@
 @charset "UTF-8";
 
 @media screen and (max-width: 480px) {
+    body {
+      overflow-x: hidden;
+    }
+  
+  
     .slider .slides{
       display: none;
       
